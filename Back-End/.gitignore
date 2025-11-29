@@ -1,0 +1,20 @@
+# Python / Django
+BACK-END/venv/
+BACK-END/db.sqlite3
+BACK-END/**/__pycache__/
+BACK-END/**/*.pyc
+BACK-END/.env
+BACK-END/staticfiles/
+*.pyc
+
+# Node / React Vite
+FRONT-END/node_modules/
+FRONT-END/dist/
+FRONT-END/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
