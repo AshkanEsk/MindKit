@@ -21,7 +21,12 @@ environ.Env.read_env(env_file=BASE_DIR / ".env")
 # ---------------------------------------------------------
 SECRET_KEY = env("SECRET_KEY", default="unsafe-secret-key")
 DEBUG = env.bool("DEBUG", default=False)
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["yourdomain.com", "www.yourdomain.com"])
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    os.environ.get("RENDER_EXTERNAL_HOSTNAME"),
+    "mindkit.onrender.com",
+]
 
 # ---------------------------------------------------------
 # Applications
