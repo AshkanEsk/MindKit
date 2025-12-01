@@ -4,6 +4,7 @@ Django settings for leitnercard project.
 
 from pathlib import Path
 import environ
+import os
 
 # ---------------------------------------------------------
 # Base Directory
